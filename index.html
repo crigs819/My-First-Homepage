@@ -6,24 +6,31 @@
     
 
     <style>
+
         body {
             background-color: gray;
+            
         }
+
         p {
             color:black;
             text-align: center;
         }
+
         body {
             color:black;
         }
+
         h1 {
             color:black;
             text-align: center;
         }
+
         h2 {
             color: black;
             text-align: center;
         }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -34,7 +41,7 @@
         }
 
         ul li {
-            float: left
+            float: left;
         }
 
         ul li a{
@@ -47,18 +54,25 @@
         }
 
         li a.active {
-    background-color: aqua;
-    color: red
-}
+            background-color: aqua;
+            color: red;
+        }
 
         a {
             text-align: center;
-            color:black
+            color:black;
         }
-li a:hover:not(.active) {
-    background-color:white;
-    color: rgb(96, 191, 222)
-}
+
+        li a:hover:not(.active) {
+            background-color:rgb(75, 67, 67);
+            color: rgb(38, 149, 190);
+        }
+
+      .container {
+          display: flex;
+          align-items: center;         
+          justify-content: center;
+        }
 
     </style>
 
@@ -74,7 +88,8 @@ li a:hover:not(.active) {
 
 
 
-  
+</head>
+
 <body>
    
     <ul>
@@ -98,19 +113,23 @@ li a:hover:not(.active) {
 </p>
 
 </div>
-    <p style="background-color:rgb(179, 176, 176)">This is my most professional headshot at the moment.</p>
-    
 
+<div s>
+    <p style="background-color:rgb(179, 176, 176)">This is my most professional headshot at the moment.</p>
+ </div>
    
+
+   <div class="container">
     <img
      src="Images/headshot.jpg" style="width: 200px; height: auto" 
      alt="Me?"/>
- 
+    </div>
+
 
 
 <p style="background-color:rgb(179, 176, 176)">My interests/hobbies include.</p>
 
-<div>
+<div class="container">
 <table>
     <tr>
         <td><h2>Interests</h2></td>
@@ -129,8 +148,8 @@ li a:hover:not(.active) {
         <td><p>Video games</p></td>
     </tr>
 </table>
-
 </div>
+
  <!--
 <ul>
     <li>Learning new things.</li>
@@ -142,13 +161,25 @@ li a:hover:not(.active) {
 
 </ul>
 -->
+
+<div>
 <p style="background-color:rgb(204, 201, 201)">2026 Summer classes include/included.</p>
+</div>
+
+<div>
+
 <p>
     CMPS 260
     <br>
     CMPS262
 </p>
+</div>
+
+<div>
 <p style="background-color:rgb(204, 201, 201)">Contact Information.</p>
+</div>
+
+<div>
 <p>
 
 
@@ -158,10 +189,14 @@ li a:hover:not(.active) {
     
 
 </p>
+</div>
+
+<div>
 <p>
     <a href="https://github.com/crigs819"> My GitHub Repository </a>
 </p>
+</div>
 
 </body>
-</head>
+
 </html>
