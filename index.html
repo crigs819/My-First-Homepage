@@ -78,11 +78,35 @@
           justify-content: center;
         }
 
-    ul.list {
+    .list {
             background-color: gray;
             display: grid;
             text-align: center;
+            align-items: center;         
+            justify-content: center;
+            margin: auto;
             
+            
+        }
+    table {
+            background-color: gray;
+            display: grid;
+            text-align: justify;         
+            justify-content: center;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 10px 50px 20px;
+        }
+
+    td {
+            padding: 1px 0;
+            border: 1px solid black;
+        }
+    tr {
+            text-align: justify;
+            vertical-align: middle;
+            padding: 100px;
+            border-collapse: separate;
         }
 
     </style>
@@ -130,7 +154,7 @@
 
 <h3 style="background-color:rgb(179, 176, 176)">My interests/hobbies include.</h3>
 
-<div class="container">
+<div>
 <table>
     <tr>
         <td><h2>Interests</h2></td>
@@ -145,13 +169,14 @@
         <td><p>Lockpicking</p></td>
     </tr>
     <tr>
-        <td><p>Trying new drinks</p></td>
+        <td><p>Trying new drinks </p></td>
         <td><p>General tinkering</p></td>
     </tr>
     <tr>
         <td><p>Traveling</p></td>
         <td><p>Video games</p></td>
     </tr>
+    
 </table>
 </div>
 
