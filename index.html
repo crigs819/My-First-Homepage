@@ -7,31 +7,28 @@
 
     <style>
 
-        body {
+    body {
             background-color: gray;
-            
+            color:black;
         }
 
-        p {
+    p {
             color:black;
             text-align: center;
         }
 
-        body {
-            color:black;
-        }
 
-        h1 {
+    h1 {
             color:black;
             text-align: center;
         }
 
-        h2 {
+    h2 {
             color: black;
             text-align: center;
         }
 
-        ul {
+    ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -40,11 +37,11 @@
             
         }
 
-        ul li {
+    ul li {
             float: left;
         }
 
-        ul li a{
+    ul li a{
             display: block;
             color:white;
             text-align: center;
@@ -53,40 +50,39 @@
             
         }
 
-        li a.active {
+    li a.active {
             background-color: aqua;
             color: red;
         }
 
-        a {
+    a {
             text-align: center;
             color:black;
         }
 
-        li a:hover:not(.active) {
+    li a:hover:not(.active) {
             background-color:rgb(75, 67, 67);
             color: rgb(38, 149, 190);
         }
 
-      .container {
+    .container {
           display: flex;
           align-items: center;         
           justify-content: center;
         }
 
+    ul.list {
+            background-color: gray;
+            display: grid;
+            text-align: center;
+            
+        }
+
     </style>
 
-
-
-
-
-
-    
     <header>
         <h1>My First Portfolio Website</h1>
     </header>
-
-
 
 </head>
 
@@ -102,10 +98,10 @@
   
     
 <br>
-
+<div>
 <h2 style="background-color:rgb(179, 176, 176)">About me.</h2>
 
-<div>
+
 <p>Hello my name is Colten Riggs and heres some information about me. I spent six years as active duty AirForce I seperated from the military then I moved to Pittsburgh <br>
  when I moved here during covid I went to CCAC and acquired an associates degree in heating and air conditioning technologies. <br>
  I have been working at UPMC Mercy for 4 years. I am currently studying at Point Park University to acquire a bachelors degree in computer science <br>
@@ -114,9 +110,7 @@
 
 </div>
 
-<div s>
-    <p style="background-color:rgb(179, 176, 176)">This is my most professional headshot at the moment.</p>
- </div>
+
    
 
    <div class="container">
@@ -164,15 +158,12 @@
 
 <div>
 <p style="background-color:rgb(204, 201, 201)">2026 Summer classes include/included.</p>
-</div>
 
-<div>
-
-<p>
-    CMPS 260
+<ul class="list">
+    <li>CMPS 260</li>
     <br>
-    CMPS262
-</p>
+    <li>CMPS 262</li>
+</ul>
 </div>
 
 <div>
