@@ -1,10 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<title>My First Portfolio Website</title>
  <head>
+    <title>My First Portfolio Website</title>
     
-
     <style>
 
     body {
@@ -37,14 +36,49 @@
             text-align: center;
         }
 
-    ul {
+    .navbar {
+        clear: both;
+        width: 100%;
+    }
+
+    .navbar ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow:hidden;
-            background-color: rgb(72, 73, 72);
+            padding-left: 0;
+            
             
         }
+
+    .navbar ul li {
+        
+        text-align: center;
+        display: inline;
+        width: 19%;
+        float: left;
+        margin-right: .5em;
+    }
+
+    .navbar ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: .35em;
+    }
+
+    li.changebackground {
+        background-color: blue;
+
+    }
+
+    li.changebackground:hover {
+        background-color: red;
+
+    }
+    li.changebackground:active {
+        background-color: darkblue;
+    }
 
     
   
@@ -110,43 +144,32 @@
             z-index: 1;
 
         }
-    .topnav {
-            overflow: hidden;
-            background-color: rgb(76, 78, 78);
-
-        }
-    .topnav a {
-            float:left;
-            color:black;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .topnav a:hover {
-            background-color: #ddd;
-            color:black;
-        }
-        .topnav a.active {
-            background-color: rgb(27, 83, 162);
-            color: white;
-        }
+    
         
     </style>
+
+    
+
+</head>
+
+<body>.
+
+
+<div data-role="header">
+
 
     <header>
         <h1>My Portfolio Website</h1>
     </header>
-
-</head>
-
-<body>
-   <div class="topnav">
-    <a class="active" href="#index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="#classes.html">Classes</a>
-    <a href="#photos">Photos</a>
-    <a href="#hobbies">Hobbies</a>
+    
+   <div id="navbar" class="navbar">
+   <ul>
+    <li class="changebackground"><a  href="#index">Home</a></li>
+    <li class="changebackground"><a  href="aboutme.html">About</a></li>
+    <li class="changebackground"><a  href="classes.html">Classes</a></li>
+    <li class="changebackground"><a  href="photos.html">Photos</a></li>
+    <li class="changebackground"><a  href="hobbies.html">Hobbies</a></li>
+ </ul>
   </div>
   <!--    
     <ul>
@@ -159,7 +182,7 @@
     -->
     
 <br>
-<div>
+<div data-role="about me">
 <h2 style="background-color:rgb(179, 176, 176)">About me.</h2>
 
 
@@ -174,7 +197,7 @@
 
    
 
-   <div class="container">
+   <div class="container" data-role="headshot">
     <img
      src="Images/headshot.jpg" style="width: 200px; height: auto" 
      alt="Me?"/>
@@ -253,6 +276,7 @@
     <a target="_blank" href="https://github.com/crigs819"> My GitHub Repository </a>
 </p>
 </div>
+
 <script src="jquery-3.3.1.min_.js"></script>
 </body>
 
