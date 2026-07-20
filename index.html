@@ -67,17 +67,18 @@
         padding: .35em;
     }
 
-    li.changebackground {
-        background-color: blue;
+    .navbar a {
+        background-color: rgb(44, 43, 43);
 
     }
 
-    li.changebackground:hover {
-        background-color: red;
+    .navbar a:hover {
+        background-color: rgb(93, 91, 91);
 
     }
-    li.changebackground:active {
-        background-color: darkblue;
+    .navbar a.active {
+        background-color: black;
+        color: white;
     }
 
     
@@ -164,7 +165,7 @@
     
    <div class="navbar">
    <ul>
-    <li class="changebackground"><a  href="index.html">Home</a></li>
+    <li class="changebackground"><a class="active" href="index.html">Home</a></li>
     <li class="changebackground"><a  href="aboutme.html">About</a></li>
     <li class="changebackground"><a  href="classes.html">Classes</a></li>
     <li class="changebackground"><a  href="photos.html">Photos</a></li>
