@@ -27,8 +27,12 @@ p {
             padding-left: 1em;
             
         }
+        .header {
+            position: sticky;
+        }
 
 h1 {
+            
             color:black;
             text-align: center;
             
@@ -45,6 +49,8 @@ h3 {
         }
 
 .navbar {
+        position: sticky;
+        top: 5px;
         clear: both;
         width: 100%;
     }
@@ -207,15 +213,17 @@ body.dark-theme tr {
 
 </head>
 
-<body class="light-theme || dark-theme">
+<body class="light-theme || dark-theme" id="output-text">
 
 
-<div data-role="header">
+<div data-role="header" class="header">
 
 
-    <header>
+    <header class="header">
         <h1>My Portfolio Website</h1>
     </header>
+
+    
 
         
             <button class="btn-toggle">Toggle light mode</button>
@@ -229,9 +237,19 @@ body.dark-theme tr {
     })
     </script>
 
-    
-    
-   <div class="navbar">
+<select id="input-font" class="input" onchange="changeFontStyle (this);">
+<option value="Times New Roman">Times New Roman</option>
+<option value="Trebuchet MS">Trebuchet MS</option>
+<option value="Arial">Arial</option>
+</select>
+
+<script>
+    var changeFontStyle = function (font) {
+        document.getElementById("output-text").style.fontFamily = font.value;
+        
+    }
+</script>
+    <div class="navbar">
    <ul>
     <li class="changebackground"><a class="active" href="index.html">Home</a></li>
     <li class="changebackground"><a  href="aboutme.html">About Me</a></li>
@@ -240,6 +258,8 @@ body.dark-theme tr {
     <li class="changebackground"><a  href="hobbies.html">Hobbies</a></li>
  </ul>
   </div>
+    
+   
 
   <!--    
     <ul>
