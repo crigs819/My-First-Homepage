@@ -13,7 +13,7 @@
 
        $(document).ready(function () {
         function rgt() {
-        $('#sldr').animate({ left: "650" }, 100, hider);
+        $('#sldr').animate({ left: "650" }, 10000, hider);
          }
        rgt();
        function hider() {
@@ -28,11 +28,11 @@
 
        $(document).ready(function () {
         function lft() {
-        $('#sldr2').animate({ right: "650" }, 100, hider);
+        $('#sldr2').animate({ right: "720" }, 10000, hider);
          }
        lft();
        function hider() {
-        $('sldr2').css('right', '0px');
+        $('sldr2').css('right', '200px');
         lft();
          }
        });
@@ -72,6 +72,10 @@ h2 {
 h3 {
             color: black;
             text-align: center;
+        }
+        .h6:hover {
+            display: none;
+            
         }
 
 .navbar {
@@ -216,6 +220,7 @@ body.dark-theme h3 {
         background-color: black;
     }
 
+
 body.dark-theme table {
         color: white;
         background-color: black;
@@ -248,7 +253,7 @@ body.dark-theme tr {
     </header>
 
         
-            <button class="btn-toggle">Toggle dark mode</button>
+            <button class="btn-toggle">Toggle light mode</button>
         
     <script>
     const btn = document.querySelector(".btn-toggle");
@@ -288,10 +293,14 @@ body.dark-theme tr {
 <form id="form1" runat="server">
    <div>
     <img id="sldr"
-     src="Images/headshot.jpg" style="width: 200px; height: auto; position:absolute" />
+     src="Images/headshot.jpg" style="width: 300px; height: 300px; position:absolute" />
     </div>
     <div>
-        <img id="sldr2" src="exploding-head.gif" style="width: 200px; height: auto; position:absolute"/>
+        <img id="sldr2" src="Images/exploding-head.gif" style="width: 150px; height: 150px; position:absolute"/>
+    </div>
+    <div class="h6">
+        <h6>Me absorbing all this computer science information</h6>
     </div>
 </form>
+
 </body>
