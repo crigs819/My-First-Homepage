@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>My First Portfolio Website</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+		
+    
+    <style>
+
+body {
+            background-color: gray;
+            color:black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            text-decoration: none;
+        }
+
+p {
+            color:black;
+            text-align: center;
+            font-style: oblique;
+            text-decoration: none;
+            padding-left: 1em;
+            
+        }
+        .header {
+            position: sticky;
+        }
+
+h1 {
+            
+            color:black;
+            text-align: center;
+            
+        }
+
+h2 {
+            color: black;
+            text-align: center;
+        }
+
+h3 {
+            color: black;
+            text-align: center;
+        }
+
+.navbar {
+        position: sticky;
+        top: 5px;
+        clear: both;
+        width: 100%;
+    }
+
+.navbar ul {
+            list-style-type: none;
+            padding-left: 0;
+            
+            
+        }
+
+.navbar ul li {
+        
+        text-align: center;
+        display: inline;
+        width: 19%;
+        float: left;
+        margin-right: .5em;
+    }
+
+.navbar ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: .35em;
+    }
+
+.navbar a {
+        background-color: rgb(44, 43, 43);
+
+    }
+
+.navbar a:hover {
+        background-color: rgb(93, 91, 91);
+
+    }
+.navbar a.active {
+        background-color: rgb(18, 102, 98);
+        color: white;
+    }
+
+.container {
+          display: flex;
+          align-items: center;         
+          justify-content: center;
+        }
+
+.list {
+            background-color: gray;
+            display: grid;
+            text-align: center;
+            align-items: center;         
+            justify-content: center;
+            margin: auto;
+            
+            
+        }
+
+table {
+            background-color: gray;
+            display: grid;
+            text-align: justify;         
+            justify-content: center;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 10px 50px 20px;
+            text-decoration: none;
+        }
+
+    
+
+td {
+            padding: 1px 0;
+            border: 1px solid black;
+        }
+
+    
+
+tr {
+            text-align: justify;
+            vertical-align: middle;
+            padding: 100px;
+            border-collapse: separate;
+        }
+
+    
+
+.dropbtn {
+            background-color: blue;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: blue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+        }
+      
+body.dark-theme {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+    }
+
+body.dark-theme p {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+    }
+
+body.dark-theme h1 {
+        color: white;
+        background-color: black;
+    }
+
+body.dark-theme h2 {
+        color: white;
+        background-color: black;
+    }
+
+body.dark-theme h3 {
+        color: white;
+        background-color: black;
+    }
+
+body.dark-theme table {
+        color: white;
+        background-color: black;
+    }
+
+body.dark-theme td {
+        color: white;
+        background-color: black;
+    }
+
+body.dark-theme tr {
+        color: white;
+        background-color: black;
+    }
+        
+    </style>
+
+    
+
+</head>
+
+<body class="light-theme || dark-theme" id="output-text">
+
+
+<div data-role="header" class="header">
+
+
+    <header class="header">
+        <h1>My Portfolio Website</h1>
+    </header>
+
+    
+
+        
+            <button class="btn-toggle">Toggle light mode</button>
+        
+    <script>
+    const btn = document.querySelector(".btn-toggle");
+
+    btn.addEventListener('click', function () {
+    document.body.classList.toggle("dark-theme");
+   
+    })
+    </script>
+
+<select id="input-font" class="input" onchange="changeFontStyle (this);">
+<option value="Times New Roman">Times New Roman</option>
+<option value="Trebuchet MS">Trebuchet MS</option>
+<option value="Arial">Arial</option>
+</select>
+
+<script>
+    var changeFontStyle = function (font) {
+        document.getElementById("output-text").style.fontFamily = font.value;
+        
+    }
+</script>
+    <div class="navbar">
+   <ul>
+    <li class="changebackground"><a class="active" href="index.html">Home</a></li>
+    <li class="changebackground"><a  href="aboutme.html">About Me</a></li>
+    <li class="changebackground"><a  href="classes.html">Classes</a></li>
+    <li class="changebackground"><a  href="photos.html">Photos</a></li>
+    <li class="changebackground"><a  href="hobbies.html">Hobbies</a></li>
+ </ul>
+  </div>
+    
+   
+
+  <!--    
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+
+    </ul>
+    -->
+    
+<br>
+<div data-role="about me">
+<h2>About me.</h2>
+
+
+<p>Hello my name is Colten Riggs and heres some information about me. I spent six years as active-duty Air Force, I separated from the military then I moved to Pittsburgh.
+ When I moved here during covid I went to CCAC and acquired an Associates degree in heating and air conditioning technologies. 
+ I have been working at UPMC Mercy for 4 years. I am currently studying at Point Park University to acquire a Bachelor`s degree in computer science. 
+ I`m not sure what path I want to follow in the computer science field I love what I have been learning and can`t wait to see where I can go in this field.
+</p>
+
+</div>
+
+
+   
+
+   <div class="container" data-role="headshot">
+    <img
+     src="Images/headshot.jpg" style="width: 200px; height: auto" 
+     alt="Me?"/>
+    </div>
+
+
+
+<h3>My interests/hobbies include.</h3>
+
+<div>
+<table>
+    <tr>
+        <td><h2>Interests</h2></td>
+        <td><h2>Hobbies</h2></td>
+    </tr>
+    <tr>
+        <td><p>Movies</p></td>
+        <td><p>Snowboarding</p></td>
+    </tr>
+    <tr>
+        <td><p>Trying new food</p></td>
+        <td><p>Lockpicking</p></td>
+    </tr>
+    <tr>
+        <td><p>Trying new drinks </p></td>
+        <td><p>General tinkering</p></td>
+    </tr>
+    <tr>
+        <td><p>Traveling</p></td>
+        <td><p>Video games</p></td>
+    </tr>
+    
+</table>
+</div>
+
+ <!--
+<ul>
+    <li>Learning new things.</li>
+    <li>Snowboarding.</li>
+    <li>Trying new things with a raspberry pi.</li>
+    <li>Lockpicking.</li>
+    <li>Trying new foods.</li>
+    <li>Traveling.</li>
+
+</ul>
+-->
+
+<div>
+<h3>2026 Summer classes include/included.</h3>
+<table>
+    <td><p>CMPS 260</p></td>
+    <td><p>CMPS 262</p></td>
+</table>
+</div>
+
+<div>
+<h3>Contact Information.</h3>
+</div>
+
+<div>
+<p>
+
+
+    Discord Username - rigatoni_412 <br>
+    Point Park Email - colten.riggs@pointpark.edu<br>
+    Element - C.riggs 
+    
+
+</p>
+</div>
+
+<div>
+<p>
+    <a target="_blank" href="https://github.com/crigs819"> My GitHub Repository </a>
+</p>
+</div>
+
+<script src="jquery-3.3.1.min_.js"></script>
+</body>
+
+</html>
